@@ -80,7 +80,7 @@ function Navbar() {
           ))}
         </div>
         <a
-  href="/HelioFlux.pdf"
+  href="/HelioFlux (3).pdf"
   download="HelioFlux.pdf"
   style={{
     ...SG,
