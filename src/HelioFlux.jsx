@@ -65,10 +65,11 @@ function Navbar() {
     <nav style={{ position:"fixed", top:0, left:0, right:0, zIndex:50, transition:"all .4s", background:scrolled?"rgba(2,44,34,0.93)":"transparent", backdropFilter:scrolled?"blur(20px)":"none", borderBottom:scrolled?"1px solid rgba(34,197,94,0.15)":"none" }}>
       <div style={{ maxWidth:1280, margin:"0 auto", padding:"14px 24px", display:"flex", alignItems:"center", justifyContent:"space-between", gap:16 }}>
         <div style={{ display:"flex", alignItems:"center", gap:10, flexShrink:0 }}>
-          <div style={{ width:32, height:32, borderRadius:8, background:"linear-gradient(135deg,#22C55E,#A3E635)", display:"flex", alignItems:"center", justifyContent:"center" }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#022C22" strokeWidth="2.5"><circle cx="12" cy="12" r="5"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          </div>
-          <span style={{ ...SG, color:"#fff", fontWeight:700, fontSize:20 }}>Helio<GradientText>Flux</GradientText></span>
+          <img 
+  src="/logo.jpeg" 
+  alt="HelioFlux Logo" 
+  style={{ height: 40, width: "auto" }} 
+/>
         </div>
         <div style={{ display:"flex", gap:24, alignItems:"center" }}>
           {links.map(l => (
@@ -582,7 +583,7 @@ function Footer() {
           </div>
           <span style={{ ...SG, color:"#ECFDF5", fontWeight:700, fontSize:15 }}>HelioFlux</span>
         </div>
-        <p style={{ ...SG, fontSize:12, color:"rgba(236,253,245,0.3)" }}>2025 HelioFlux. All rights reserved.</p>
+        <p style={{ ...SG, fontSize:12, color:"rgba(236,253,245,0.3)" }}>2026 HelioFlux. All rights reserved.</p>
         <div style={{ display:"flex", gap:22 }}>
           {["Privacy","Terms","Contact"].map(l=>(
             <a key={l} href="#" style={{ ...SG, fontSize:12, color:"rgba(74,222,128,0.6)", textDecoration:"none", transition:"color .2s" }}
